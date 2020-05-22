@@ -38,7 +38,7 @@ model.add(MaxPooling2D(pool_size=(2,2),
                        ))
 #第二个卷积层的输出是(64,14,14)
 model.add(Conv2D(64,(5,5),activation='relu',
-                 input_shape=(1,28,28),padding='same'))
+                 padding='same'))
 #第二个池化层的输出是(64,7,7)
 model.add(MaxPooling2D(pool_size=(2,2),
                        strides=(2,2),
